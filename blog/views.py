@@ -16,14 +16,14 @@ def say_hellow(request: Request):
  '''
 @api_view(['GET','POST'])
 def index(request: Request):
-    message= ""
+    message4= ""
     if request.POST.get('name'):
-        message='Hellow ,' + request.POST.get('name')
+        message4='Hellow ,' + request.POST.get('name')
 
     print(request.POST.get('name'))
 
     return Response(
-        {'message':message}
+        {'message':message4}
 
     )
 
